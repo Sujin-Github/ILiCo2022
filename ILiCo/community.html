@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="main.css">
+    <title>일리코</title>
+</head>
+
+
+<body>
+    <!--배경-->
+    <div id="Web_1920_1080_bg">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
+            <line x1="100" y1="200" x2="1820" y2="200" fill="none" stroke="#e2e2e2" stroke-width="3"/>
+        </svg>
+        <svg id="contentbox">
+            <rect class="menubox" rx="25" ry="25" x="0" y="0" top="230" left="475" width="1016" height="750"/>
+        </svg>
+        <svg id="menubox">
+    		<rect class="menubox" rx="25" ry="25" x="0" y="0" top="0" left="0" width="350" height="750"/>
+    	</svg>
+        <svg id="widgetbox">
+            <rect rx="25" ry="25" x="0" y="0" top="230" left="1500" width="300" height="750" fill="var(--bg)"/>
+        </svg>
+    </div>
+
+    <!--헤더 (상단 바)-->
+    <header id="header">
+        <button type="button" style="background-color:#FFFFFF;" onclick = "location.href='main.html'"><img class="logo" src='logo.svg'></button>
+        <button type="button" class="topmenu">상단메뉴1</button>
+        <button type="button" class="topmenu">상단메뉴2</button>
+        <button type="button" class="topmenu">상단메뉴3</button>
+        <!--프로필 이미지 버튼-->
+        <button id="profile">
+            <img class="profileimg" src="제목 없음.png">
+        </button>
+    </header>
+
+    <!--메인-->
+    <main id="main">
+        <!--페이지 브라우징-->
+        <iframe width="1000" height="750" src=""></iframe>
+    </main>
+    <!--좌측 메뉴(그리드)-->
+    <div class="menucontainer">
+        <div class="menu1">
+            <button type="button" class="menubutton" onclick = "location.href='intro.html'">일리코 소개
+            </button>
+        </div>
+        <div class="menu2">
+            <button type="button" class="menubutton" onclick = "location.href='LnF.html'">분실물
+            </button>
+        </div>
+        <div class="menu3">
+            <button type="button" class="menubutton" onclick = "location.href='club.html'">동아리 소개
+            </button>
+        </div>
+        <div class="menu4">
+            <button type="button" class="menubutton" onclick = "location.href='minigame.html'">미니 게임
+            </button>
+        </div>
+        <div class="menu5">
+            <button type="button" class="menubutton" onclick = "location.href='community.html'" style="background-color:var(--mo);color:var(--fonty);">커뮤니티
+            </button>
+        </div>
+    </div>
+
+    <div class="widgetcontainer">
+
+    </div>
+    
+    <footer id="footer">
+        <p class="textmain" style="color:var(--fontn);">2022 1학기 일리코 제작</p>
+    </footer>
+</body>
