@@ -1,0 +1,136 @@
+:root {
+/* Colors: */
+--fontn: #A5A5A5;
+--fonty: #575757;
+--outline: #E2E2E2;
+--bg: #F5F5F5;
+--w: #FFFFFF;
+--ilico1: #231955;
+--ilico2: #F6C94F;
+--unnamed-color-141e70: #141E70;
+--unnamed-color-000000: #000000;
+--mo: #E9EDFA;
+}
+.texthead1 {
+font-family: 'Nanum Gothic', sans-serif;
+font-style: normal;
+font-weight: bold;
+font-size: 24px;
+line-height: 200%;
+color: var(--unnamed-color-000000);
+}
+.texthead2 {
+font-family: 'Nanum Gothic', sans-serif;
+font-style: normal;
+font-weight: bold;
+font-size: 20px;
+line-height: 200%;
+color: var(--unnamed-color-000000);
+}
+.textbold {
+font-family: 'Nanum Gothic', sans-serif;
+font-style: normal;
+font-weight: bold;
+font-size: 16px;
+line-height: 180%;
+color: var(--ilico1);
+}
+.textmain {
+font-family: 'Nanum Gothic', sans-serif;
+font-style: normal;
+font-size: 16px;
+line-height: 160%;
+color: var(--unnamed-color-000000);
+margin-left: 20px;
+}
+.menutext {
+    font-family: 'Nanum Gothic', sans-serif;
+    color: var(--fontn);
+    text-align: left;
+    letter-spacing: 0px;
+    color: #A5A5A5;
+    position: relative;
+    width: fit-content;
+    font-size: 16px;
+    font-weight: bold;
+}
+.textgray{
+    font-family: 'Nanum Gothic', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 170%;
+    color: var(--fonty);
+    background-color: var(--bg);
+}
+.texthl{
+    font-family: 'Nanum Gothic', sans-serif;
+    font-style: italic;
+    font-weight: medium;
+    font-size: 16px;
+    line-height: 170%;
+    color: var(--fonty);
+    background-color: #F9E79F;
+}
+#image {
+    position: absolute;
+    left: 40%;
+    width: 60%;
+    height: 100%;
+    background-color: var(--bg);
+    overflow: hidden;
+}
+#bg {
+    position: absolute;
+    left:0%;
+    width: 40%;
+    min-width: 350px;
+    height: 120%;
+    top:0%;
+    background-color: var(--w);
+    overflow: hidden;
+    text-align: center;
+}
+
+.boxline {
+    stroke: rgba(226,226,226,1);
+    stroke-width: 3px;
+    stroke-linejoin: miter;
+    stroke-linecap: butt;
+    stroke-miterlimit: 4;
+    shape-rendering: auto;
+}
+
+.logo {
+    width:inherit;
+}
+.logo:hover{
+    filter: drop-shadow(0 0 3px gray);
+}
+.logo:active {
+    filter: drop-shadow(0 0 3px gray);
+    filter:brightness(0.9);
+}
+
+
+@media (max-width: 600px) {
+    #image {
+        position: absolute;
+        left: 0%;
+        width: 100%;
+        height: 40%;
+        background-color: var(--bg);
+        overflow: hidden;
+    }
+    #bg {
+        position: absolute;
+        left:0%;
+        width: 100%;
+        height: 60%;
+        top:40%;
+        background-color: var(--w);
+        overflow: hidden;
+        text-align: center;
+    }
+
+}

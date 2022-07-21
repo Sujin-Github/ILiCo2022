@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>일리코</title>
+</head>
+
+
+<body>
+    <!--배경-->
+    <div id="bg">
+        <svg class="contentbox">
+            <rect class="boxline" fill="var(--w)" rx="25" ry="25" x="0" y="0" top="100%" left="100%" width="100%" height="100%"/>
+        </svg>
+        <svg class="widgetbox">
+            <rect rx="25" ry="25" x="0" y="0" top="0" left="0" width="100%" height="100%"/>
+        </svg>
+        <svg class="menubox">
+    		<rect x="0" y="0" top="0" left="0" width="100%" height="100%"/>
+    	</svg>
+        <div style="margin-top:10px;text-align:center;"><button type="button" style="background-color:#FFFFFF;" onclick = "location.href='index.html'"><img class="logo" src='./item/logo.png'></button></div>
+    </div>
+
+    <!--헤더 (상단 바)-->
+    <header id="header">
+        <button type="button" class="topmenu" onclick = "location.href='./topmenu/menu1.html'">상단메뉴1</button>
+        <button type="button" class="topmenu" onclick = "location.href='./topmenu/menu2.html'">상단메뉴2</button>
+        <button type="button" class="topmenu" onclick = "location.href='./topmenu/menu3.html'">상단메뉴3</button>
+        <!--프로필 이미지 버튼-->
+        <button id="profile">
+            <img class="profileimg" src="./item/user.png" onclick = "location.href='./login.html'">
+        </button>
+    </header>
+
+    <!--메인-->
+    <main id="main">
+        <!--페이지 브라우징-->
+        <iframe width="90%" height="90%" style="margin-left:3%;" src="./hslost/hslost/templates/main.html"></iframe>
+        <p class="footerin textmain" style="font-size:12px;margin-right:20px;" style="color:var(--fontn);">2022 1학기 일리코 제작</p>
+
+    </main>
+    <!--좌측 메뉴(그리드)-->
+    <div class="menubox">
+        <div class="menucontainer">
+            <div class="menu1">
+                <button type="button" class="menubutton" onclick="location.href='./intropage.html'">일리코 소개
+                </button>
+            </div>
+            <div class="menu2">
+                <button type="button" class="menubutton" style="background-color:var(--mo);color:var(--fonty);">분실물
+                </button>
+            </div>
+            <div class="menu3">
+                <button type="button" class="menubutton" onclick = "location.href=''">동아리 소개
+                </button>
+            </div>
+            <div class="menu4">
+                <button type="button" class="menubutton" onclick = "location.href=''">미니 게임
+                </button>
+            </div>
+            <div class="menu5">
+                <button type="button" class="menubutton" onclick = "location.href=''">커뮤니티
+                </button>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+</html>
