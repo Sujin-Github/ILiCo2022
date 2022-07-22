@@ -387,3 +387,12 @@ margin-left: 20px;
         display: none;
     }
 }
+
+@media (max-height: 500px) {
+    .logo {
+        width:200px;
+        position: relative;
+        left:-150%;
+        top:2%;
+    }
+}
