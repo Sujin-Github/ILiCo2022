@@ -226,7 +226,7 @@ body{
         left: 0;
         top: 0;
         width: 100%;
-        height: 10%;
+        height: 12%;
         background-color: white;
         z-index: 100;
     }
@@ -245,9 +245,9 @@ body{
     #widget {
         position: absolute;
         left: 75%;
-        top: 15%;
+        top: 20%;
         width: 25%;
-        height: 85%;
+        height: 80%;
         display: flex;
         flex-direction: column;
         background-color: var(--bg);
@@ -270,18 +270,18 @@ body{
     #menumain {
         position: absolute;
         left: 0;
-        top: 10%;
+        top: 12%;
         width: 100%;
-        height: 90%;
+        height: 88%;
         background-color: var(--bg);
         overflow: visible;
     }
     #menu {
         position: fixed;
         left: 0;
-        top: 10%;
+        top: 12%;
         width: 100%;
-        height: 5%;
+        height: 8%;
         display: flex;
         flex-direction: row;
         background-color: white;
@@ -293,11 +293,11 @@ body{
         position: absolute;
         overflow: visible;
         left: 0;
-        top: 5%;
+        top: 8%;
         width: 75%;
-        height: 95%;
+        height: 92%;
         background-color: var(--mainbg);
-        overflow: visible;
+        overflow: hidden;
         padding: 0;
     }
     #contentbox {
@@ -307,8 +307,8 @@ body{
         left: 5%;
         top: 5%;
         width: 84%;
-        height: 90%;
-        min-height: 90%;
+        height: 84%;
+        min-height: 84%;
         padding: 3% 3%;
     }
     .iframe {
