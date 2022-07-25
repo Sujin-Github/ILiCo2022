@@ -287,7 +287,7 @@ body{
         background-color: white;
         z-index: 99;
         justify-content: space-evenly;
-        align-items: flex-end;
+        align-items: center;
     }
     #main {
         position: absolute;
