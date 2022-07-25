@@ -1,0 +1,318 @@
+body{
+ -ms-overflow-style: none;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+:root {
+    --fontn: #A5A5A5;
+    --fonty: #575757;
+    --outline: #E2E2E2;
+    --bg: #F5F5F5;
+    --w: #FFFFFF;
+    --ilico1: #231955;
+    --ilico2: #F6C94F;
+    --unnamed-color-141e70: #141E70;
+    --unnamed-color-000000: #000000;
+    --mo: #E9EDFA;
+
+    --navy: #343D83;
+    --pink: #F24B73;
+    --or: #FDAF76;
+    --ye: #EAEA80;
+    --line: #D2D2D2;
+    --mainbg: #EEEFF3;
+}
+
+.textmain {
+    font-family: 'Nanum Gothic', sans-serif;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 160%;
+    color: var(--unnamed-color-000000);
+}
+.texthead1 {
+    font-family: 'Nanum Gothic', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 180%;
+    color: var(--unnamed-color-000000);
+}
+.texthead2 {
+    font-family: 'Nanum Gothic', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 180%;
+    color: var(--unnamed-color-000000);
+}
+.textbold {
+    font-family: 'Nanum Gothic', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 180%;
+    color: var(--ilico1);
+}
+.textgray{
+    font-family: 'Nanum Gothic', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 170%;
+    color: var(--fonty);
+    background-color: var(--bg);
+}
+.texthl{
+    font-family: 'Nanum Gothic', sans-serif;
+    font-style: italic;
+    font-weight: medium;
+    font-size: 15px;
+    line-height: 170%;
+    color: var(--fonty);
+    background-color: #F9E79F;
+}
+
+#header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 8%;
+    background-color: white;
+    z-index: 100;
+
+}
+#logo {
+    position: absolute;
+    left: 5%;
+    top: 15%;
+    height: 70%;
+}
+#logo:hover{
+    filter: drop-shadow(0 0 3px gray);
+}
+#logo:active {
+    filter: drop-shadow(0 0 3px gray);
+    filter:brightness(0.9);
+}
+#topmenu {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: nowrap;
+    background-color: none;
+    position: absolute;
+    right:5%;
+    top: 25%;
+    width: 35%;
+    height: 50%;
+}
+#widget {
+    position: absolute;
+    left: 0;
+    top: 8%;
+    width: 100%;
+    height: 12%;
+    display: flex;
+    flex-direction: row;
+    background-color: var(--bg);
+    justify-content: flex-start;
+    align-items: center;
+}
+.box {
+    position: relative;
+    border-radius: 25px 25px 25px 25px;
+    background-color: var(--w);
+    width: fit-content;
+    height: fit-content;
+    padding: 3%;
+    margin-left: 5%;
+}
+#menumain {
+    position: absolute;
+    left: 0;
+    top: 20%;
+    width: 100%;
+    height: 100%;
+    background-color: var(--bg);
+    overflow: visible;
+}
+#menu {
+    position: sticky;
+    left: 0;
+    top: 8%;
+    width: 100%;
+    height: 5%;
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    z-index:99;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#main {
+    position: absolute;
+    overflow: visible;
+    left: 0;
+    top: 5%;
+    width: 90%;
+    height: 90%;
+    background-color: var(--mainbg);
+    padding: 5% 5%;
+    overflow: visible;
+}
+#contentbox {
+    position: absolute;
+    border-radius: 25px 25px 0px 0px;
+    width: 90%;
+    height: auto;
+    min-height: 100%;
+    background-color: white;
+}
+
+.lineunder {
+    position: absolute;
+    bottom:0;
+    width:100%;
+    height:2px;
+    background-color: var(--line);
+    z-index: 101;
+}
+.icon {
+    position: relative;
+    height: 100%;
+    margin-left: 10px;
+}
+.icon:hover {
+    filter: brightness(0.8);
+}
+.icon:active {
+    filter: brightness(0);
+}
+.menubutton {
+    position: relative;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 15px;
+    text-align: center;
+    letter-spacing: 0;
+    font-weight: bold;
+    color: var(--line);
+    opacity: 1;
+    background-color: var(--w);
+    width: auto;
+    height: fit-content;
+    margin-bottom: 5px;
+
+}
+.menubutton:hover {
+    color: var(--navy);
+}
+.menubutton:active {
+    color: var(--pink);
+}
+.iframe {
+    position:absolute;
+    margin:5%;
+}
+
+
+/*3:2 이상 가로 화면*/
+@media (min-aspect-ratio :4/3) {
+    #header {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 10%;
+        background-color: white;
+        z-index: 100;
+    }
+    #topmenu {
+        display: flex;
+        flex-direction: row-reverse;
+        flex-wrap: nowrap;
+        background-color: var(--w);
+        position: absolute;
+        right:5%;
+        top: 25%;
+        width: 30%;
+        height: 50%;
+        justify-content: space-around;
+    }
+    #widget {
+        position: absolute;
+        left: 75%;
+        top: 15%;
+        width: 25%;
+        height: 85%;
+        display: flex;
+        flex-direction: column;
+        background-color: var(--bg);
+        justify-content: flex-start;
+        align-items: center;
+        background-color: var(--bg);
+        z-index: 103;
+    }
+    .box {
+        position: relative;
+        border-radius: 25px 25px 25px 25px;
+        background-color: var(--w);
+        text-align: center;
+        width: 50%;
+        height: auto;
+        padding: 3%;
+        margin-top: 5%;
+        z-index: 105;
+    }
+    #menumain {
+        position: absolute;
+        left: 0;
+        top: 10%;
+        width: 100%;
+        height: 90%;
+        background-color: var(--bg);
+        overflow: visible;
+    }
+    #menu {
+        position: fixed;
+        left: 0;
+        top: 10%;
+        width: 100%;
+        height: 5%;
+        display: flex;
+        flex-direction: row;
+        background-color: white;
+        z-index: 99;
+        justify-content: space-evenly;
+        align-items: flex-end;
+    }
+    #main {
+        position: absolute;
+        overflow: visible;
+        left: 0;
+        top: 5%;
+        width: 75%;
+        height: 95%;
+        background-color: var(--mainbg);
+        overflow: visible;
+        padding: 0;
+    }
+    #contentbox {
+        position: absolute;
+        border-radius: 25px 25px 25px 25px;
+        background-color: var(--w);
+        left: 5%;
+        top: 5%;
+        width: 84%;
+        height: 90%;
+        min-height: 90%;
+        padding: 3% 3%;
+    }
+    .iframe {
+        position:absolute;
+        margin: 0;
+    }
+}
